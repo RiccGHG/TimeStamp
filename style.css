@@ -11,24 +11,28 @@ body {
     h1 {
         margin-bottom: 20px;
     }
-.conatiner {
-    margin-top: 10px;
+.container {
     background: white;
     border-radius: 15px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
     width: 280px;
-    padding: 25px 6px;
-    box-shadow:  0 8px 20px rgba(0, 0, 0, 0.8);
+    padding: 2px 6px 25px 1px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
-.conatiner input:hover select:hover select:active {
+.container input, select {
+    gap: 10px;
+}
+.container input:hover select:hover select:active {
     border-color: black;
 }
 select:focus {
     outline: 1px solid black;
     border-radius: 5px;
 }
-.conatiner #genBtn {
+.container #genBtn {
     width: 50%;
     margin-top: 10px;
     height: 25px;
@@ -38,11 +42,11 @@ select:focus {
     background: deepskyblue;
     transition: 1s ease;
 }
-.conatiner #genBtn:hover {
+.container #genBtn:hover {
     transform: scale(1.05);
     background-color: dodgerblue;
 }
-.conatiner #copyBtn {
+.container #copyBtn {
     margin-top: 10px;
     margin-left: 130px;
     width: 70px;
@@ -50,7 +54,7 @@ select:focus {
     border: 1px solid black;
     border-radius: 10px;
 }
-.conatiner #result {
+.container #result {
       color: black;
       font-size: 20px;
       margin-top: 20px;

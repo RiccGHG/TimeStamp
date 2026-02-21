@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="conatiner">
+    <div class="container">
       <h1>Formatter</h1>
-      <input type="number" style="visibility: hidden" id="ts" />
-      <select id="select">
+      <input type="number" style="display: none" id="ts" />
+      <br>
+    <select id="select">
         <option value="f">Date, month name, time</option>
         <option value="F">Day, date, month name, time</option>
         <option value="s">Date, time</option>
@@ -18,10 +19,11 @@
         <option value="d">Date</option>
         <option value="D">Date, month name</option>
         <option value="R">Until</option>
-      </select>
+      </select> 
       <div>
-        <div><button id="copyBtn" disabled>Copy</button></div>
-        <div id="result">-</div></div>
+        <button id="copyBtn" disabled>Copy</button>
+        <div id="result">-</div>
+      </div>
     </div>
   </body>
   <script src="./main.js"></script>

@@ -1,22 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Time Stamp</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body></body>
-  <div class="conatiner">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Time Stamp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
+  <div class="container">
     <h1>Timestamp</h1>
-      <label for='mode'>Output as ms</label>
-      <input type="checkbox" id='mode'>
-    <input type="datetime-local" id='time'>
-    <button onclick="time()" id='genBtn'>Generate</button>
     <div>
-       <button onclick="copy(this)" id='copyBtn' disabled>Copy</button>
-    <div id="result">-</div></div>
+      <label for="mode">Output as ms</label>
+      <input type="checkbox" id="mode" />
+    </div>
+    <input type="datetime-local" id="time" />
+    <button onclick="time()" id="genBtn">Generate</button>
+    <div>
+      <button onclick="copy(this)" id="copyBtn" disabled>Copy</button>
+      <div id="result">-</div>
+    </div>
+    <a style="display: none;" id="link">Go to the formatter</a>
   </div>
   <script src="main.js"></script>
 </html>
