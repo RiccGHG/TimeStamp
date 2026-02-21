@@ -15,12 +15,18 @@ body {
     margin-top: 10px;
     background: white;
     border-radius: 15px;
+    display: block;
     text-align: center;
     width: 280px;
     padding: 25px 6px;
+    box-shadow:  0 8px 20px rgba(0, 0, 0, 0.8);
 }
-.conatiner input:hover {
+.conatiner input:hover select:hover select:active {
     border-color: black;
+}
+select:focus {
+    outline: 1px solid black;
+    border-radius: 5px;
 }
 .conatiner #genBtn {
     width: 50%;

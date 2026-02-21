@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Stamp - Formatter</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <h1>Formatter</h1>
+      <input type="number" style="visibility: hidden" id="ts" />
+      <select id="select">
+        <option value="f">Date, month name, time</option>
+        <option value="F">Day, date, month name, time</option>
+        <option value="s">Date, time</option>
+        <option value="t">Time</option>
+        <option value="d">Date</option>
+        <option value="D">Date, month name</option>
+        <option value="R">Until</option>
+      </select>
+      <div>
+        <div><button id="copyBtn" disabled>Copy</button></div>
+        <div id="result">-</div></div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
